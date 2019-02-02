@@ -103,7 +103,7 @@ $returnRows = "50";
 $sort = "DESC";
 $qDate = $sqldate;
 $query_mod = " ORDER BY inDate $sort LIMIT $returnRows";
-$query="SELECT visitorID, FirstName, LastName, Company, Visiting, vehicleonsite, licenseplate FROM $table WHERE( inDate like '$qDate%' AND Location like '$location') AND SignOutFlag=0 $query_mod";
+$query="SELECT visitorID, visitorID, FirstName, LastName, Company, Visiting, vehicleonsite, licenseplate FROM $table WHERE( inDate like '$qDate%' AND Location like '$location') AND SignOutFlag=0 $query_mod";
 
 // sending query
 $result = mysqli_query($database_link, $query);
@@ -209,6 +209,9 @@ echo "<table class=\"table table-striped table-bordered\"><tr>";
 echo "
 <th class=\"text-center\">
 	$TEXT_ACTION
+</th>
+<th class=\"text-center\">
+	$TEXT_VISITOR_BADGE
 </th>
 <th class=\"text-center\">
 	$TEXT_FIRST_NAME
