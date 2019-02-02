@@ -515,7 +515,7 @@ echo '
 <p class="copyright">
 	T.C.E.D.I. Open Visitors Management System <?php echo $appVer ?>
 	<br>
-	Copyright &copy; 2016 by T.C.E.D.I. (Jean-Denis Tenaerts)
+	Copyright &copy; <?php echo date("Y"); ?> by T.C.E.D.I. (Jean-Denis Tenaerts)
 	<br>
 <?php
 if($bShowLinkToAdministrationPage === true)
