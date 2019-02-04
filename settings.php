@@ -28,9 +28,9 @@
 
 // Edit the following for your company.
 $db_host = 'localhost';//hostname of MySQL server//
-$db_user = 'airgapco_visitorUser';//username of MySQL web-app account//
-$db_pwd = '5;x]z#t7qB0a';//password of MySQL web-app account//
-$database = 'airgapco_visitors';//MySQL database name for this application//
+$db_user = 'your_database_user';//username of MySQL web-app account//
+$db_pwd = 'your_datebase_password';//password of MySQL web-app account//
+$database = 'your_database_name';//MySQL database name for this application//
 $table = 'visitors';//MySQL table name in the database//
 $companyname = 'Your Company corp.' ;//Your Company Name//
 $shortname = 'Your Company' ;//Your Company Short Name ie. IBM for International Business Machines//
